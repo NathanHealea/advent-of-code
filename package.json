@@ -1,0 +1,27 @@
+{
+  "name": "advent-of-code",
+  "version": "2023.0.0",
+  "description": "Solutions to the Advent of Code written in JavaScript.",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "javascript",
+    "advent-of-code",
+    "advent-of-code-2023"
+  ],
+  "scripts": {
+    "lint": "next lint",
+    "format": "npx prettier --write .",
+    "version:major": "npm version major --force",
+    "version:minor": "npm version minor --force",
+    "version:patch": "npm version patch --force"
+  },
+  "author": "Nathan Healea <nate.healea@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}
