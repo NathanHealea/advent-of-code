@@ -8,9 +8,10 @@
       "type": "node",
       "request": "launch",
       "name": "Debug",
-      "skipFiles": ["<node_internals>/**"],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
       "program": "${file}",
-      "cwd": "${fileDirname}"
     }
   ]
 }
