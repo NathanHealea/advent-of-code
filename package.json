@@ -7,9 +7,12 @@
   "keywords": [
     "javascript",
     "advent-of-code",
-    "advent-of-code-2023"
+    "advent-of-code-2023",
+    "advent-of-code-2024"
   ],
   "scripts": {
+    "watch": "onchange -k ./src/**/*.js --",
+    "2024:01:1": "node ./src/2024/01/index.js",
     "lint": "next lint",
     "format": "npx prettier --write .",
     "version:major": "npm version major --force",
@@ -22,6 +25,7 @@
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "onchange": "^7.1.0",
     "prettier": "2.8.8"
   }
 }
