@@ -13,6 +13,7 @@
   "scripts": {
     "watch": "onchange -k ./src/**/*.js --",
     "2024:01": "node ./src/2024/01/index.js",
+    "2024:02": "node ./src/2024/02/index.js",
     "lint": "next lint",
     "format": "npx prettier --write .",
     "version:major": "npm version major --force",
