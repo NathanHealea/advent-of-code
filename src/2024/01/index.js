@@ -1,11 +1,10 @@
-import { getAocInput, getCwd } from '../../utils/readFile.js';
+import { getAocInput, fileURLToPath } from '../../utils/readFile.js';
 
 /**
  * Main program
  */
 function main() {
-  const path = `${getCwd()}/src/2024/01`;
-  const input = getAocInput(path);
+  const input = getAocInput(fileURLToPath(import.meta.url));
 
   partOne(input);
   partTwo(input);
@@ -13,16 +12,15 @@ function main() {
 
 /**
  * Solution for AOC 2024, Day 1, Part 1
- * @param {string[]} input puzzle input file content.
+ * @param {number[]} input puzzle input file content.
  */
 function partOne(input = []) {
   const leftList = [];
   const rightList = [];
 
-  input.forEach((row) => {
+  input.forEach((values) => {
     const leftIndex = 0;
     const rightIndex = 3;
-    const values = row.split(' ');
 
     leftList.push(values[leftIndex]);
     rightList.push(values[rightIndex]);
@@ -46,16 +44,15 @@ function partOne(input = []) {
 
 /**
  * Solution for AOC 2024, Day 1, Part 2
- * @param {string[]} input puzzle input file content.
+ * @param {number[]} input puzzle input file content.
  */
 function partTwo(input = []) {
   const leftList = [];
   const rightList = [];
 
-  input.forEach((row) => {
+  input.forEach((values) => {
     const leftIndex = 0;
     const rightIndex = 3;
-    const values = row.split(' ');
 
     leftList.push(values[leftIndex]);
     rightList.push(values[rightIndex]);
